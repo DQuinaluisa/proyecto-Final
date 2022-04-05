@@ -1,0 +1,19 @@
+.login_oueter {
+  width: 360px;
+  max-width: 100%;
+  position: relative;
+  top: 5%;
+}
+#refrescar {
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  left: 15%;
+  top: 25%;
+
+}
+
+#boton {
+  position: relative;
+  margin-top: 5%;
+}

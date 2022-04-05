@@ -1,0 +1,154 @@
+
+.color1{
+    background-color: #00172A;
+    color: white;
+
+}
+.nav__logo{
+  position: absolute;
+  margin-left: 15%;
+  margin-top: -1%;
+  width: 10%;
+  height: 20%;
+}
+.nav__home{
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  position: absolute;
+  margin-top: 5.5%;
+  margin-left: 18.3%;
+
+}
+.nav__barra{
+    position: absolute;
+    margin-top: 3%;
+    width: 100%;
+  }
+.nav__item-1{
+  position: absolute;
+  width: 10%;
+  height: 6.4%;
+  margin-left: 29%;
+  margin-top: 3%;
+  transition: transform .2s;
+
+}
+/*
+  -efecto over("agrandar el cuadro cuando se pase el mouse por encima"
+   para que los cuadros de menu
+*/
+.nav__item-1:hover{
+  position: absolute;
+  width: 10%;
+  height: 6.4%;
+  margin-left: 29%;
+  margin-top: 3%;
+  transform: scale(1.2);
+
+}
+.nav__nosotros{
+  position: absolute;
+  margin-left: 32.5%;
+  margin-top: 4%;
+
+  background: url('/assets/img/img/nosotros.png')
+}
+
+
+
+.nav__item-2{
+  position: absolute;
+  width: 15.7%;
+  height: 6.4%;
+  margin-left: 38.8%;
+  margin-top: 3%;
+  transition: transform .2s;
+
+}
+
+.nav__item-2:hover{
+  position: absolute;
+  width: 15.7%;
+  height: 6.4%;
+  margin-left: 38.8%;
+  margin-top: 3%;
+  transform: scale(1.2);
+
+}
+
+.nav__experiencia{
+  position: absolute;
+  margin-left: 41.8%;
+  margin-top: 3.9%;
+}
+
+
+
+.nav__item-3{
+  position: absolute;
+  margin-left: 54.2%;
+  height: 6.4%;
+  margin-top: 3%;
+  transition: transform .2s;
+}
+
+.nav__item-3:hover{
+  position: absolute;
+  margin-left: 54.2%;
+  height: 6.4%;
+  margin-top: 3%;
+  transform: scale(1.2);
+}
+
+.nav__aliados{
+  position: absolute;
+  margin-left: 58.5%;
+  margin-top: 3.9%;
+}
+
+.nav__item-4{
+  position: absolute;
+  height: 6.4%;
+  margin-left: 64.5%;
+  margin-top: 3%;
+  transition: transform .2s;
+}
+
+.nav__item-4:hover{
+  position: absolute;
+  height: 6.4%;
+  margin-left: 64.5%;
+  margin-top: 3%;
+  transform: scale(1.2);
+}
+.nav__virtual{
+  position: absolute;
+  margin-left: 68.5%;
+  margin-top: 3.9%;
+}
+.text1{
+  color: #00172A; /* Fallback for older browsers */
+  color: rgba(#00172A);
+
+}
+@media only screen and (max-width: 700px) {
+  .hola1 {
+    visibility: hidden;
+  }
+}
+.text{
+  font-family: 'Orbitron';
+  color: #00ffff;
+  font-size: 75%;
+
+}
+
+.text:hover{
+  color: #000000;
+}
+body{
+  cursor:url(/assets/img/cursor.png), auto;
+}
+a{
+  cursor:url(/assets/img/cursor.png), auto;
+}

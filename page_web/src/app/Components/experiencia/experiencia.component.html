@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="color1">
+    <app-nav></app-nav>
+    <app-navbar class="navres"></app-navbar>
+    <div class="container">
+      <div class="container-md p-6">
+          <h3 class="text-center pb-5 pt-6 h1 fuente">{{"EXPERIENCE.TITLE" | translate}}</h3>
+      </div>
+      <div class="row hola" >
+          <div class="card1">
+            <div class="card-body">
+              <ngu-carousel [inputs]="carouselBanner" [dataSource]="carouselTileItems$ | async">
+                  <button NguCarouselPrev class='leftRs'>&lt;</button>
+                
+                  <ngu-item *nguCarouselDef="let item; index as i; let ani = animate" [@slider]="ani">
+                    <div class="bannerStyle" [style.background]="'url(' + item + ')'">
+                      <h1>{{ i + 1 }}</h1>
+                    </div>
+                  </ngu-item>
+                  <button NguCarouselNext class='rightRs'>&gt;</button>
+                </ngu-carousel>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-body" >
+                  <ngu-carousel [inputs]="carouselBanner" [dataSource]="carouselTileItems1$ | async">
+                      <button NguCarouselPrev class='leftRs'>&lt;</button>
+                    
+                      <ngu-item *nguCarouselDef="let item; index as i; let ani = animate" [@slider]="ani">
+                        <div class="bannerStyle" [style.background]="'url(' + item + ')'">
+                          <h1>{{ i + 1 }}</h1>
+                        </div>
+                      </ngu-item>
+                      <button NguCarouselNext class='rightRs'>&gt;</button>
+                    </ngu-carousel>
+              </div>
+            </div>
+            <div  class="card1" >
+              <div class="card-body" >
+                  <ngu-carousel [inputs]="carouselBanner" [dataSource]="carouselTileItems2$ | async">
+                      <button NguCarouselPrev class='leftRs'>&lt;</button>
+                    
+                      <ngu-item *nguCarouselDef="let item; index as i; let ani = animate" [@slider]="ani">
+                        <div class="bannerStyle" [style.background]="'url(' + item + ')'">
+                          <h1>{{ i + 1 }}</h1>
+                        </div>
+                      </ngu-item>
+                      <button NguCarouselNext class='rightRs'>&gt;</button>
+                    </ngu-carousel>
+              </div>
+            </div>
+          </div>
+        <div class="container-md col-md-10 p-8">
+          <p class="text-justify pb-8 pt-8 h5 text1">{{"EXPERIENCE.PARAGRAPH" | translate}}</p>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <button  id="modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <i style="margin-right: 5px;"  class="fas fa-plus-square"></i>  Crear Nuevo Producto
+        </button>
+      </div>
+      <div class="col-md-4">
+        <button  id="modal2" class="btn btn-success" (click)="newUser()">
+          <i style="margin-right: 5px;"  class="fas fa-user-plus"></i> Crear Nuevo Usuario
+        </button>
+
+      </div>
+      <div class="col-md-4">
+        <div id="modal3" class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right: 5px;" class="fas fa-user-tie"></i>  {{ user }}
+          </button>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li> <button class="btn btn-light" (click)="inico()">  <i class="fas fa-home"></i> Pantalla Inicio</button></li>
+            <li> <button class="btn btn-light" (click)="salir()">  <i class="fas fa-sign-out-alt"></i>  Cerrar Session</button></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Crear Nuevo Producto</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<div class="container">
+  <div class="row " >
+
+        <div class="form-row">
+          <div class="col-md-6">
+
+          </div>
+
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-shopping-bag"></i></span>
+              </div>
+              <input  type="text"  [ngModelOptions]="{standalone: true}" [(ngModel)]="name" class="input form-control" id="producto" placeholder="Nombre del Producto" aria-label="Producto" aria-describedby="basic-addon1" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-dollar-sign"></i></span>
+              </div>
+              <input  type="number"  [ngModelOptions]="{standalone: true}" [(ngModel)]="price" class="input form-control" id="precio" placeholder="Precio" aria-label="Email" aria-describedby="basic-addon1" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-bars"></i></span>
+              </div>
+              <textarea  type="text" [ngModelOptions]="{standalone: true}" [(ngModel)]="description" class="input form-control" id="description" placeholder="Descripcion" required="true" aria-label="category" aria-describedby="basic-addon1" ></textarea>
+            </div>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-success" (click)="createProduct()" type="submit" name="signin"><i class="fas fa-save"></i> Crear</button>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+
+  </div>
+</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div id="tabla" class="col-md-10">
+  <h2>Tabla de productos</h2>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre del Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Descripcion</th>
+
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of products | slice:desde:hasta let i=index "  >
+      <tr>
+        <th >{{ i+1 }}</th>
+        <td>{{ data.name }}</td>
+        <td> {{ data.price }} </td>
+        <td> {{ data.description }} </td>
+        <td>
+           <button title="{{ data._id }}" class="btn btn-danger" value="{{ data._id }}" (click)="deleteProduct(data._id)" > <i class="fas fa-eraser"></i> Borrar</button>
+           <button style="margin: 2px;" title="{{ data._id }}" class="btn btn-warning" value="{{ data._id }}" (click)="selectProduct(data._id)" > <i class="fas fa-edit"></i> Editar</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+  <mat-paginator  [length]="products.length"
+          [pageSize]="pageSize"
+          (page)="cambiarpagina($event)"
+          aria-label="Select page">
+</mat-paginator>
+</div>

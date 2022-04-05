@@ -1,0 +1,69 @@
+.container{
+    margin-top: 10%;
+    }
+    .figura {
+        width: 400px;
+        height: 50px;
+        color: white;
+        border-right: 60px solid transparent;
+        border-bottom: 75px solid #0a3457;
+
+    }
+    .img1{
+        box-shadow: 10px 10px 5px rgb(31, 28, 28);
+        width: 600px;
+        border: 1px solid #004483ff;
+        background-image: linear-gradient(#007df1ff, #007df1ff),
+                        linear-gradient(#007df1ff, #007df1ff),
+                        linear-gradient(#007df1ff, #007df1ff),
+                        linear-gradient(#007df1ff, #007df1ff);
+        background-repeat: no-repeat;
+        background-size: 10px 37%, 15% 10px, 10px 38%, 15% 10px, calc(100% - 1px) calc(100% - 1px);
+        background-position: left bottom, left bottom, right top, right top, 1px 1px;
+        padding: 2px;
+
+     }
+    .color{
+        background-color: #05253f;
+        color: white;
+        text-align: justify;
+        margin-top: 3%;
+        margin-right: 0%;
+        outline: 10px double rgb(31, 49, 83);
+        outline-offset: 10px;
+        position: relative;
+        left: 2%;
+    }
+    .color1{
+        background-color: #00172A;
+        color: white;
+    }
+    .fuente{
+        font-family: 'Orbitron';
+    }
+.navres{
+    visibility: hidden;
+  }
+  @media only screen and (max-width: 600px) {
+    .navres {
+      visibility: initial;
+      background-color: #00172A;
+    }
+  }
+.img2{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+    margin-left: -5px;
+        }
+        @media only screen and (max-width: 700px) {
+            .img2 {
+                width: 100%;
+                height: 100%;
+            }
+          }
+
+          body{
+            cursor:url(/assets/img/cursor.png), auto;
+          }

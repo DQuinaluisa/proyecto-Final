@@ -1,0 +1,41 @@
+.container{
+    margin-top: 11%;
+    /* background: #00172A; */
+    }
+.img1{
+    width: 200px;
+    height: 200px;
+    margin-top: -80%;
+    margin-left: 10%;
+}
+.card1{
+    margin-left: 15px;
+    width: 20rem;
+}
+.hola{
+    justify-content: center;
+}
+.cuadro2{
+    margin-top: 15%;
+}
+.img2{
+margin-top: -30%;
+width: 225px;
+margin-left: 5%;
+}
+.color1{
+    background-color: #00172A;
+    color: white;
+}
+.navres{
+    visibility: hidden;
+  }
+  @media only screen and (max-width: 600px) {
+    .navres {
+      visibility: initial;
+      background-color: #00172A;
+    }
+  } 
+body{
+    cursor:url(/assets/img/cursor.png), auto;
+  }

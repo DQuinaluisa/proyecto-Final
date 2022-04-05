@@ -1,0 +1,90 @@
+{
+    "HOME":{
+        "SERVICES": "SERVICES"
+    },
+    "APPS":{
+        "TITLE":"APPs",
+        "PARAGRAPH":"The development of applications for mobile devices allows to provide operation and resources that provide faster and easier access to the necessary information, with versatility in terms of its use and attribution of functionalities. We develop mobile applications with you under the Android and iOS platforms that allow look for new possibilities and encourage creativity, depending on the type of content to be offered, in order to provide the user with a comprehensive experience through the use of different digital tools."
+    },
+    "DIGITAL-ART":{
+        "TITLE":"DIGITAL ART COACHING",
+        "PARAGRAPH":"The emergence of NFTs (Non-fungible Tokens) defined as digital assets that are based on blockchain networks, have come to revolutionize the world of art, giving rise to Cryptoart which is a way of introducing scarcity and value to art in digital form, exploring new aesthetics, where different artists participate from photographers to artists in digital illustration, glitch / gif art, video collage, AI art, virtual reality among others.We accompany you in the process to identify which works can be an NFT, how to produce them in the different platforms and to spread your portfolio of digital art, in addition to being part of communities of digital artists in Latin America."
+    },
+    "DIGITAL-PROJECTS":{
+        "TITLE":"COACHING DIGITAL PROJECTS",
+        "PARAGRAPH":"The exponential digital coach differentiates itself by accompanying people to reinvent themselves by offering them knowledge and experimentation through the synergy of the use of new technologies and the application of emotional intelligence.Before starting a digital project you must have a roadmap and know In what stage are you, following our AVALON methodology we will help you to cooperate together your new reality in a simple, creative and effective way, giving you an exponential digital coaching without closed days and hours, using the different platforms and applications in which a coach will be available to take sessions where you will get an estimate of the cost according to the amount of time of the online session."
+    },
+    "COMMERCE":{
+        "TITLE":"E-COMMERCE",
+        "PARAGRAPH":"The year 2020 has seen a 10-year advance in the development of E-commerce and the adaptation of augmented reality as well as artificial intelligence will be important in the coming years; in turn, the emergence of local brands has been seen beyond international brands in different areas of consumption. We offer the development of a functional and creative E-commerce platform that can connect the seller with the community they have chosen, whether it is offering products that show the philosophy of their own brand or to sell a portfolio of different brands."
+    },
+    "DAPPS":{
+        "TITLE":"DAPPs",
+        "PARAGRAPH":"Blockchain technology came to revolutionize the world, since it will have a wide impact on finance, marketing and business, from now on it aims to become a kind of technological institution that will change operations in banks, organizations and companies, becoming In the Internet of value, we structure public and private Blockchain networks, using different platforms such as Hyperledger and Ethereum among others, to offer solutions that can be applied to different businesses since the innovation of blockchain technology is creating new paths every time."
+    },
+    "EXPERIENCE":{
+        "TITLE":"OUR EXPERIENCE",
+        "PARAGRAPH":"KetanoLab is a Digital Services Agency focused on providing differential value, linking platforms, improving the consumer experience, adapting to digital transformation and providing services that are in line with new technologies, following the rhythm of each project."
+    },
+    "BEGINNING":{
+        "TITLE-1":"ONLINE DIGITAL SYSTEMS",
+        "TITLE-2":"E-COMMERCE",
+        "TITLE-3":"SERVICES",
+        "TITLE-3.1":"WEB",
+        "TITLE-4":"APPs",
+        "TITLE-5":"DIGITAL NFT COACHING",
+        "COACHING":"COACHING",
+        "COACHING-1.1":"SIGHTSEEING",
+        "COACHING-1.2":"VIRTUAL",
+        "COACHING-2.1":"PROJECTS",
+        "COACHING-2.2":"DIGITAL",
+        "TITLE-6":"DIGITAL ART",
+        "TITLE-7":"DIGITAL STRATEGY CONSULTING",
+        "TITLE-8":"PRODUCTION",
+        "TITLE-8.1":"DIGITAL",
+        "TITLE-9":"MARKETING",
+        "TITLE-9.1":"EXPONENTIAL",
+        "TITLE-10":"DEVELOPMENT OF SOLUTIONS",
+        "TITLE-10.1":"BLOCKCHAIN",
+        "TITLE-11":"DAPPs",
+        "TITLE-12":"HEAD HUNTING DEVELOPERS",
+        "TITLE-12.1":"NEW ZEALAND"
+    },
+    "MARKETING":{
+        "TITLE":"EXPONENTIAL MARKETING",
+        "PARAGRAPH":"Exponential Marketing is applied sociology with data that help us in the integral optimization of a business.",
+        "PARAGRAPH-1":"Our Exponential Marketing System is focused on changing the mentality of a business with digitized information, using or creating an exponential sales function, through:",
+        "LIST":"1. Exponential content.",
+        "LIST-1":"2. Exponential Reach.",
+        "LIST-2":"3. Exponential digital trust.",
+        "LIST-3":"4. Exponential sales.",
+        "LIST-4":"5. Exponential digital relationships."
+    },
+    "NAV":{
+        "TITLE":"Nav Bar",
+        "TITLE-1":"WE",
+        "TITLE-2":"OUR EXPERIENCE",
+        "TITLE-3":"ALLIES",
+        "TITLE-4":"VIRTUAL OFFICE",
+        "TITLE-5":"HOME"
+    },
+    "WE":{
+        "TITLE":"WE",
+        "PERSON-1":"Roger Prado De La Fuente",
+        "PERSON-2":"Pedro Terán",
+        "PERSON-3":"Milenka E. Pereira",
+        "PARAGRAPH":"KetanoLab is a Digital Services Agency focused on providing differential value, linking platforms, improving the consumer experience, adapting to digital transformation and providing services that are in line with new technologies, following the rhythm of each project."
+    },
+    "PRODUCTION":{
+        "TITLE":"DIGITAL PRODUCTION",
+        "PARAGRAPH":"We imagine your project with you in order to elevate your digital audiovisual products for social networks, web pages, with 2D and 3D animations."
+    },
+    "SERVICES":{
+        "TITLE":"WEB SERVICES",
+        "PARAGRAPH":"Having a website today is more accessible and essential to be immersed in the opportunities offered by the virtual market. We accompany you to design your project with an avant-garde and creative web design and development, transforming your website into an experience, counting on digital tools such as virtual reality and augmented reality."
+    },
+    "SIGHTSEEING":{
+        "TITLE":"VIRTUAL TOURISM COACHING",
+        "PARAGRAPH":"Tourism is also on the way to the new digital era, where through the use of platforms and digital tools such as virtual reality, people can visit places of interest such as ancient archaeological sites, emblematic buildings, historic centers and even immerse themselves in mysterious lakes of interactive way beyond your imagination. Learn with us to apply strategies and digital tools that help you generate new projects for a tourist site where an experience is provided that motivates new virtual tourists to travel through time and cyberspace to Magic places. Virtualization Laboratory of Tourist Heritage."
+    }
+}

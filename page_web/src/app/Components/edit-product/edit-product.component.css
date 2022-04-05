@@ -1,0 +1,14 @@
+.login_oueter {
+  width: 360px;
+  max-width: 100%;
+  position: relative;
+  left: 35%;
+  margin-top: 5%;
+
+}
+
+
+#boton {
+  position: relative;
+  margin-top: 5%;
+}

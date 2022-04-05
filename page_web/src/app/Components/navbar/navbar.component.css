@@ -1,0 +1,22 @@
+.hola{
+    visibility: hidden;
+
+  }
+  img{
+    width: 3rem;
+  }
+
+  /* .button-nav{
+    background-color: yellowgreen;
+    border: none;
+  } */
+  @media only screen and (max-width: 700px) {
+    .hola {
+      visibility: initial;
+      background-color: #00172A;
+    }
+  }
+
+.color{
+    background-color: #00172A;
+}

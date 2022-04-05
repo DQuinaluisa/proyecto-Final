@@ -1,0 +1,119 @@
+.bannerStyle h1 {
+    min-height: 218px;
+    line-height: 218px;
+    text-align: center;
+    
+  }
+  .leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.568);
+    border-radius: 999px;
+    left: 0;
+    z-index: 1;
+    margin-top: 100px;
+    display: none;
+  }
+  
+  .rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.568);
+    border-radius: 999px;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+  .container{
+    margin-top: 9%;
+ }
+.img1{
+  width: 325px;
+} 
+
+.card1{
+    margin-left: 15px;
+    width: 25rem;
+}
+.hola{
+    justify-content: center;
+   
+}
+.color1{
+    background-color: #00172A;
+    color: white;
+}
+.nav__logo{
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 10px;
+  width: 150px;
+  height: 200px;
+}
+.nav__home{
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  position: absolute;
+  margin-top: 135px;
+  margin-left: 395px;
+
+}
+.nav__item-1{
+  position: absolute;
+  margin-left: 570px;
+  margin-top: 95px;
+}
+.nav__nosotros{
+  position: absolute;
+  margin-left: 640px;
+  margin-top: 110px;
+}
+.nav__barra{
+  position: absolute;
+  margin-top: 4.5%;
+}
+
+.nav__item-2{
+  position: absolute;
+  margin-left: 760px;
+  margin-top: 95px;
+}
+.nav__experiencia{
+  position: absolute;
+  margin-left: 840px;
+  margin-top: 110px;
+}
+
+.nav__item-3{
+  position: absolute;
+  margin-left: 1060px;
+  margin-top: 95px;
+}
+.nav__aliados{
+  position: absolute;
+  margin-left: 1130px;
+  margin-top: 110px;
+}
+
+.nav__item-4{
+  position: absolute;
+  margin-left: 1250px;
+  margin-top: 95px;
+}
+.nav__virtual{
+  position: absolute;
+  margin-left: 1330px;
+  margin-top: 110px;
+}
+.text1{
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.5);
+}

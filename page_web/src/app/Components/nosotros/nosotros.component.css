@@ -1,0 +1,195 @@
+.containers{
+    margin-top: 4%;
+    }
+.img1{
+  width: 300px;
+  height: 300px;
+  transition: transform .2s;
+}
+.img1:hover{
+  width: 300px;
+  height: 300px;
+  transform: scale(1.2);
+
+}
+
+.card1{
+    margin-left: 15px;
+    width: 20rem;
+}
+.card2{
+    margin-top: -75px;
+    margin-left: 15px;
+    width: 20rem;
+}
+
+.card2p{
+  margin-top: 2px;
+  margin-left: 40%;
+  width: 20rem;
+}
+.hola{
+    justify-content: center;
+}
+.cuadro1{
+    width: 225px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+.cuadro2{
+    width: 200px;
+    height:65px ;
+    margin-top: -35px;
+    margin-left: 20px;
+}
+.cuadro3{
+    width: 225px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+.text1{
+    margin-top: -45px;
+    margin-left: 30px;
+}
+.text2{
+    margin-top: -45px;
+    margin-left: 75px;
+}
+.text3{
+    margin-top: -45px;
+    margin-left: 60px;
+}
+.imgIzq{
+width: 75px;
+margin-left: 20%;
+margin-top: -65px;
+}
+.imgDer{
+width: 75px;
+margin-left: 75%;;
+margin-top: -100px;
+}
+
+.cardInfo{
+  background: none;
+   width: 50%;
+   position: relative; left: 26%;
+}
+
+.imgIzqp{
+  width: 75px;
+  position: relative;
+  top: 5%;
+
+
+  }
+  .imgIzqp:hover{
+    width: 75px;
+    position: relative;
+    top: 5%;
+    animation: imgIzqp 0.5s 1;
+
+    }
+
+    @keyframes imgIzqp{
+      25%,75%{
+        transform: scale(0.8)
+      }
+      50%{
+        transform: scale(1.1)
+      }
+    }
+  .imgDerp{
+  width: 75px;
+  position: relative;
+  top: 5%;
+
+  }
+  .imgDerp:hover{
+    width: 75px;
+    position: relative;
+    top: 5%;
+    animation: imgDerp 0.5s 1;
+    }
+    @keyframes imgDerp{
+      25%,75%{
+        transform: scale(0.8)
+      }
+      50%{
+        transform: scale(1.1)
+      }
+    }
+.text{
+    margin-top: -60px;
+}
+.color1{
+    background-color: #00172A;
+    color: white;
+}
+.fuente{
+    font-family: 'Orbitron';
+  }
+ .navres{
+    visibility: hidden;
+  }
+  .color{
+    background-color: #05253f;
+    color: white;
+    text-align: justify;
+
+    outline: 6px double rgb(48, 74, 124);
+    outline-offset: 10px;
+    position: relative;
+
+}
+  .borde{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+    margin-left: -5px;
+        }
+  @media only screen and (max-width: 600px) {
+    .navres {
+      visibility: initial;
+      background-color: #00172A;
+    }
+    .card2p{
+      margin-top: 2px;
+      margin-left: 8%;
+      width: 20rem;
+    }
+    .cardInfo{
+      background: none;
+       width: 50%;
+       position: relative;
+
+    }
+    .imgIzqp{
+      width: 25px;
+      position: relative;
+      top: 5%;
+
+      }
+      .imgDerp{
+      width: 25px;
+      position: relative;
+      top: 5%;
+
+      }
+      .borde{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+
+            }
+  }
+  body{
+    cursor:url(/assets/img/cursor.png), auto;
+  }
+
+
+/*
+  efecto para rotar la img
+   -separar imagenes : imagenes de cuadro separada de la foto de la persona
+*/
