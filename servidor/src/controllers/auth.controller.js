@@ -31,14 +31,13 @@ import Role from '../models/Role'
          expiresIn: 86400 // 24 horas
      })
  
- 
     res.status(200).json({token})
   } catch (error) {
     console.log(error)
   }
 
  }
-
+        /* Verificamos si el usuario que va ingresar este registrado en la aplicacion* */
  export const signIn = async (req, res) => {
    const userFound = await User.findOne({email: req.body.email}).populate("roles");
    if(!userFound) return res.status(400).json({message: "Usuario no Encontrado"})
@@ -46,7 +45,7 @@ import Role from '../models/Role'
     const matchPassword =  await User.comparePassword(req.body.password, userFound.password)
 
     if(!matchPassword) return res.status(401).json({token: null, message: "Contraseña Invalida" })
-
+   /* Creamos el token el cual contendra el id del usuario* */
   const token =  jwt.sign({id: userFound._id}, config.SECRET, {
       expiresIn: 86400
     })

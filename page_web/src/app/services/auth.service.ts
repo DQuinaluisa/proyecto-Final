@@ -8,7 +8,7 @@ import { Product } from '../models/product';
   providedIn: 'root'
 })
 export class AuthService {
-
+   /* Conexion con el servidor* */
   private url = 'http://localhost:3000/api'
   constructor(
     private http : HttpClient
@@ -38,6 +38,7 @@ export class AuthService {
   }
 
   createProduct(data : any): Observable<Object>{
+    /* Aqui recuperamos el token y podemos relaizar el post "Crear un nuevo Registro" */
     const token = localStorage.getItem("token")
 
     const headers = new HttpHeaders({

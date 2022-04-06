@@ -35,6 +35,9 @@ export const isModerator = async (req, res, next) => {
     return res.status(403).json({message: "Usted no es un Monitor"})
 }
 
+/** Verificamos si el usuario tiene rol de Admin 
+ * esto se ejecuta antes de realizar alguna peticion Http
+ */
 export const isAdmin = async (req, res, next) => {
     const user = await User.findById(req.userId)
     const roles = await Role.find({_id: {$in: user.roles}})

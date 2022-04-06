@@ -14,6 +14,8 @@ export class TokenGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
+         /* Una vez que recuperamos el token podemos
+         preguntar si a la pantalla que vamos a ingresar tiene el token* */
       const auth = localStorage.getItem("token");
       if(auth == null){
         Swal.fire({

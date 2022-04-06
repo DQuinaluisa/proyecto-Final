@@ -7,6 +7,8 @@ import products from "./routes/products.routes"
 import auth  from "./routes/auth.routes"
 import user from "./routes/user.routes"
 const app = express()
+
+/** Funcion para que se creen los roles automaticamente **/
 createRoles();   
     
 app.use(cors())  
@@ -26,8 +28,12 @@ app.use(express.urlencoded({
     extended : true
 }))
 
+/** Nombre que damos a las rutas **/
 app.use('/api/products', products)
 app.use('/api/auth', auth)
 app.use('/api/user', user)
 
 export default app;
+
+
+/** Configuracion de todo el servidor **/

@@ -26,22 +26,15 @@ export class LoginComponent implements OnInit {
       "email" : this.email,
       "password" : this.password
     }
-    // if(data){
-    //   let data = {
 
-    //     "email": null,
-    //     "password": null
-    //   }
-    //   Swal.fire({
-    //     icon: 'error',
-    //     title: 'Oops!!!',
-    //     text: 'No se puede Ingresar!',
-
-    //   })
-    // }
 
     this.serverAuth.login(data).subscribe((data : any) => {
-
+      /* Una vez que el usario ingresa
+        nosotros en la data guardaremos en la propiedad
+        localStorage el token y el userFound
+        estos nos servira para poder ingresar a las otras pantallas como recuperar
+        el nombre del usuario que ingreso
+      */
       this.token = data["token"]
       this.user = data["userFound"]
       localStorage.setItem("user", this.user.username)

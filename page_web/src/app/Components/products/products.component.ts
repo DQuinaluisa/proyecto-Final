@@ -35,7 +35,7 @@ export class ProductsComponent implements OnInit {
   }
 
 
-
+/* Aqui vamos a crear un nuevo producto */
   createProduct(){
     let data = {
       "name" : this.name,
@@ -61,7 +61,7 @@ export class ProductsComponent implements OnInit {
   }
 
 
-
+/* Aqui estamos realizanco el paginado */
   cambiarpagina(e:PageEvent ){
     console.log(e)
     this.desde = e.pageIndex * e.pageSize;
@@ -122,6 +122,7 @@ inico() {
   this.router.navigate(['/inicio' ]);
 }
 
+/* Aqui destruimos el token */
   salir(){
     localStorage.getItem("token")
     localStorage.clear()

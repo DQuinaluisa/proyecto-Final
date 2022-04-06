@@ -12,8 +12,7 @@ export const createProduct = async(req, res) => {
 export const getProduct = async (req, res) => {
     const products = await Product.find().sort({
        $natural : -1
-    })
-    
+    })   
     res.status(200).json(products)
 }
 

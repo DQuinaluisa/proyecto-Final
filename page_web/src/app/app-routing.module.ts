@@ -54,6 +54,7 @@ const routes: Routes = [
   {
     path: "registro",
     component : SignupComponent,
+    /**MEdiante la propiedad canActivate podemos usar el token para validar estas rutas  */
     canActivate : [TokenGuard]
 
   },
