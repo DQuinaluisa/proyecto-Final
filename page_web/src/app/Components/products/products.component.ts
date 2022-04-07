@@ -20,6 +20,9 @@ export class ProductsComponent implements OnInit {
   pageSize = 5;
   desde : number = 0;
   hasta : number = 5;
+  role : any;
+  createUser : boolean = true;
+  createProducts : boolean = true;
   constructor(
     private serverAuth : AuthService,
     private router : Router
@@ -32,6 +35,13 @@ export class ProductsComponent implements OnInit {
     this.getProducts();
     this.user = localStorage.getItem("user")
     console.log(this.user)
+    this.role = localStorage.getItem("role")
+    console.log(this.role)
+    if(this.role == "user"){
+      console.log("Es ususario")
+      this.createProducts = false
+      this.createUser = false
+    }
   }
 
 

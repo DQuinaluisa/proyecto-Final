@@ -12,7 +12,7 @@ const app = express()
 createRoles();   
     
 app.use(cors())  
-
+ 
 
 app.use(morgan('dev'));
 

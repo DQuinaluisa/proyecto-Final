@@ -5,6 +5,7 @@ export const createProduct = async(req, res) => {
   const newProduct =  new Product ({
         name, description, price
     })
+    
     const productSave = await newProduct.save()
     res.status(201).json(productSave)
 }

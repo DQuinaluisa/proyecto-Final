@@ -13,6 +13,10 @@ export class LoginComponent implements OnInit {
   password : any;
   token : any;
   user : any;
+  role : any;
+  type : any;
+  createUser : boolean = true;
+  createProduct : boolean = true;
   constructor(
     private serverAuth : AuthService,
     private router : Router
@@ -37,9 +41,19 @@ export class LoginComponent implements OnInit {
       */
       this.token = data["token"]
       this.user = data["userFound"]
+      this.role = data["userFound"]
       localStorage.setItem("user", this.user.username)
       localStorage.setItem("token", this.token)
-     console.log( localStorage.getItem("user"))
+      this.type = this.role.roles[0]
+      localStorage.setItem("role", this.type.name)
+    //  console.log( this.role.roles)
+
+      console.log( this.type.name)
+      if(this.type.name == "user"){
+        console.log("Es ususario")
+        this.createProduct = false
+        this.createProduct = false
+      }
       Swal.fire({
         icon: 'success',
         title: 'Bienvenidos!!!',

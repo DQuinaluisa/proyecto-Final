@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <button  id="modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button *ngIf="createUser" id="modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
           <i style="margin-right: 5px;"  class="fas fa-plus-square"></i>  Crear Nuevo Producto
         </button>
       </div>
       <div class="col-md-4">
-        <button  id="modal2" class="btn btn-success" (click)="newUser()">
+        <button *ngIf="createProducts" id="modal2" class="btn btn-success" (click)="newUser()">
           <i style="margin-right: 5px;"  class="fas fa-user-plus"></i> Crear Nuevo Usuario
         </button>
 
@@ -109,7 +109,7 @@
         <th scope="col">Precio</th>
         <th scope="col">Descripcion</th>
 
-        <th scope="col">Acciones</th>
+        <th *ngIf="createUser" scope="col">Acciones</th>
       </tr>
     </thead>
     <tbody *ngFor="let data of products | slice:desde:hasta let i=index "  >
@@ -119,8 +119,8 @@
         <td> {{ data.price }} </td>
         <td> {{ data.description }} </td>
         <td>
-           <button title="{{ data._id }}" class="btn btn-danger" value="{{ data._id }}" (click)="deleteProduct(data._id)" > <i class="fas fa-eraser"></i> Borrar</button>
-           <button style="margin: 2px;" title="{{ data._id }}" class="btn btn-warning" value="{{ data._id }}" (click)="selectProduct(data._id)" > <i class="fas fa-edit"></i> Editar</button>
+           <button *ngIf="createUser" title="{{ data._id }}" class="btn btn-danger" value="{{ data._id }}" (click)="deleteProduct(data._id)" > <i class="fas fa-eraser"></i> Borrar</button>
+           <button  *ngIf="createUser"style="margin: 2px;" title="{{ data._id }}" class="btn btn-warning" value="{{ data._id }}" (click)="selectProduct(data._id)" > <i class="fas fa-edit"></i> Editar</button>
         </td>
       </tr>
 
